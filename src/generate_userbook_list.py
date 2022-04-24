@@ -53,5 +53,5 @@ for begin_user, end_user, book_count in user_intervals:
             user["books"].append(book)
         result_dict.append(user)
 
-with open('../data/result_users_with_books.json', "w") as f:
+with open('../data/result.json', "w") as f:
     json.dump(result_dict, f, indent=4)
